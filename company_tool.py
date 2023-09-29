@@ -1,4 +1,4 @@
-# company_tool.py 
+# company_tool.py
 
 import os
 
@@ -8,30 +8,37 @@ class CompanyInfo:
     self.name = name
     self.details = details
     self.founders = founders
-    self.location = location  
+    self.location = location
     self.developers = developers
     self.ascii_art = ascii_art
 
   def display_info(self):
-    print(f"\033[97m{self.name}\033[0m")
-    print(f"\033[97m{self.details}\033[0m")
-    print(f"\033[97mFounders: {', '.join(self.founders)}\033[0m")
-    print(f"\033[97mLocation: {self.location}\033[0m")
-    print(f"\033[97mDevelopers: {', '.join(self.developers)}\033[0m")
-    
-    print(self.ascii_art.center(os.get_terminal_size().columns))
+
+    # Center ASCII art in "div"
+    print("" TLPRORG "
+   
+
+    # Format details
+    print("Company Name: " + self.name)
+    print()    
+    print("Overview:")
+    print(self.details)
+    print()   
+    print("Founders: " + ', '.join(self.founders))
+    print("Location: " + self.location)
+    print("Developers: " + ', '.join(self.developers))
 
 def main():
 
-  ascii_art = """  
+  ascii_art = """
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@#+=-::-=+#@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@#+-::::::::::-*@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@%***=-::::::::::::=@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@#+-::::-+%%+-:::::::::-@@@@@@@@@@@@
 @@@@@@@@@@@@%+-:::::::::+@@=:::::::::=@@@@@@@@@@@
-@@@@@@@@@@#+=--=*%#=:::::::=@@+:::::::::=@@@@@@@@@@   
+@@@@@@@@@@#+=--=*%#=:::::::=@@+:::::::::=@@@@@@@@@@
 @@@@@@@%*+-::::-%@#:::::::+@@=:::::::::+@@@@@@@@@@
 @@@@@@@@@@@+::::-@@#:::::::*@@=:::::::::=@@@@@@@@@
 @@@@@@@@@@@@=::::=@@*:::::::*@@=:::::::::*@@@@@@@@
@@ -48,12 +55,7 @@ def main():
 """
 
   my_company = CompanyInfo(
-    name="\033[97mTlprORG\033[0m", 
-    details="\033[97mTlprOrganisation is a socially-conscious technology company using both non-profit and for-profit models to drive positive change through software.\033[0m",
-    founders=["\033[97mFounder1\033[0m", "\033[97mFounder2\033[0m"],
-    location="\033[97mIndia\033[0m", 
-    developers=["\033[97msajadtlpr\033[0m", "\033[97mdev1\033[0m", "\033[97mdev2\033[0m"],
-    ascii_art=ascii_art
+    # Details
   )
 
   my_company.display_info()
