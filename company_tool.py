@@ -48,8 +48,7 @@ def main():
 
     my_company = CompanyInfo(
         name="TlprORG",
-        details="TlprOrganisation is a socially-conscious technology company using both non-profit and for-profit models to drive positive change through software. Our non-profit arm develops open-source platforms addressing issues like climate change and inequality. These are funded by grants and donations. Our for-profit arm provides custom software services to purpose-driven clients like non-profits and social enterprises. These profits sustain our ability to donate technology services. At TlprOrganisation, we believe the ethical use of software can empower communities in need. Our tools are designed to support existing efforts towards progress. We build community-driven software reflecting society's diverse needs.",
-        founders=["Abdulla Sajad", ""],
+        details="TlprOrganisation is a socially-conscious technology company using both non-profit and for-profit models to drive positive change through software. 
         location=", India",
         developers=["sajadtlpr", "", ""],
         ascii_art=ascii_art
