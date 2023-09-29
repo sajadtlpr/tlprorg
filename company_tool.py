@@ -30,8 +30,7 @@ def main():
    
                                             """
     my_company = CompanyInfo(
-        name="\033[97mTlprORG\033[0m",
-        details="\033[97mTlprOrganisation: A tech company using non-profit and for-profit models to drive positive change.\033[0m",
+        details="\033[97mTlprOrganisation: A non-profit tech company.\033[0m",
         founders=["\033[97mABDULLA SAJAD\033[0m"],
         location="\033[97mIndia\033[0m",
         developers=["\033[97msajadtlpr\033[0m"],
