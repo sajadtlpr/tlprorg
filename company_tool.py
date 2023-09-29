@@ -30,16 +30,17 @@ class CompanyInfo:
 
 def main():
     ascii_art = """
-         _____ _     ____  ____  
-        |_   _| |   |  _ \|  _ \ 
-          | | | |   | |_) | |_) |
-          | | | |___|  __/|  _ < 
-          |_| |_____|_|   |_| \_\
-                          
-    """
+  _____ _     ____  ____  _   _ _____ _____ 
+ |_   _| |   |  _ \|  _ \| \ | | ____|_   _|
+   | | | |   | |_) | |_) |  \| |  _|   | |  
+   | | | |___|  __/|  _ <| |\  | |___  | |  
+   |_| |_____|_|   |_| \_\_| \_|_____| |_|  
+                                            
+   
+                                            """
     my_company = CompanyInfo(
-        name="\033[97mTlprORG\033[0m",
-        details="\033[97mTlprOrganisation: A tech company using non-profit and for-profit models to drive positive change.\033[0m",
+        name="\033[97mTlprNET\033[0m",
+        details="\033[97mTlprOrganisation's software center, providing a range of applications and tools.\033[0m",
         founders=["\033[97mABDULLA SAJAD\033[0m"],
         location="\033[97mIndia\033[0m",
         developers=["\033[97msajadtlpr\033[0m"],
