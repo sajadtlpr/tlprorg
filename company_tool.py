@@ -3,12 +3,12 @@ import time
 
 class CompanyInfo:
 
-    def __init__(self, name, details, founders, location, developers, ascii_art):
+    def __init__(self, name, details, founder, location, developer, ascii_art):
         self.name = name
         self.details = details
-        self.founders = founders
+        self.founder = founder
         self.location = location
-        self.developers = developers
+        self.developer = developer
         self.ascii_art = ascii_art
         self.options = {
             "Software": "Description of software",
