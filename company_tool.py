@@ -20,7 +20,7 @@ class CompanyInfo:
     def display_options(self):
         print("\nAvailable Options:")
         for idx, option in enumerate(self.options, start=1):
-            print(f"{idx}. {option}")
+            print(f"\033[94m{idx}. {option}\033[0m")
 
     def display_info(self):
         os.system('clear')  # Clear the terminal screen
@@ -29,21 +29,21 @@ class CompanyInfo:
         print(f"\033[96m{self.details}\033[0m".center(os.get_terminal_size().columns))
 
 def main():
-    ascii_art = """
+    ascii_art = """\033[95m 
   _____ _     ____  ____  _   _ _____ _____ 
  |_   _| |   |  _ \|  _ \| \ | | ____|_   _|
    | | | |   | |_) | |_) |  \| |  _|   | |  
    | | | |___|  __/|  _ <| |\  | |___  | |  
    |_| |_____|_|   |_| \_\_| \_|_____| |_|  
                                             
-   
+\033[0m   
                                             """
     my_company = CompanyInfo(
         name="\033[97mTlprNET\033[0m",
-        details="\033[97mTlprOrganisation's software center, providing a range of applications and tools.\033[0m",
-        founders=["\033[97mABDULLA SAJAD\033[0m"],
+        details="\033[97mTlprOrganisation's software center.\033[0m",
+        founder=["\033[97mABDULLA SAJAD\033[0m"],
         location="\033[97mIndia\033[0m",
-        developers=["\033[97msajadtlpr\033[0m"],
+        developer=["\033[97msajadtlpr\033[0m"],
         ascii_art=ascii_art
     )
 
@@ -52,8 +52,8 @@ def main():
         my_company.display_options()
 
         # Prompt user for option
-        option = input("Enter the number of the option to see details (q to quit): ")
-        if option == 'q':
+        option = input("Enter the option (\033[94mq to quit\033[0m): ")
+        if option == 'y':
             break
 
         # Display details for the selected option
@@ -61,7 +61,7 @@ def main():
         selected_option = list(my_company.options.keys())[option_idx]
         print(f"\nDetails for {selected_option}:\n{my_company.options[selected_option]}")
 
-        input("Press Enter to continue...")
+        input("\nPress Enter to continue...")
 
         # Display current time and date
         print(f"\033[96m{time.strftime('%H:%M:%S %d-%m-%Y')}\033[0m".center(os.get_terminal_size().columns))
