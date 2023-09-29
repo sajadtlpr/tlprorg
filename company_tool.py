@@ -32,9 +32,9 @@ def main():
     my_company = CompanyInfo(
         name="\033[97mTlprORG\033[0m",
         details="\033[97mTlprOrganisation is a socially-conscious technology company using both non-profit and for-profit models to drive positive change through software.\033[0m",
-        founders=["\033[97mFounder1\033[0m", "\033[97mFounder2\033[0m"],
+        founders=["\033[97mABDULLA SAJAD\033[0m"],
         location="\033[97mIndia\033[0m",
-        developers=["\033[97msajadtlpr\033[0m", "\033[97mdev1\033[0m", "\033[97mdev2\033[0m"],
+        developers=["\033[97msajadtlpr\033[0m", "\033[97*\033[0m", "\033[97m*\033[0m"],
         ascii_art=ascii_art
     )
 
