@@ -38,14 +38,15 @@ def main():
                                             
 \033[0m   
                                             """
-    my_company = CompanyInfo(
-        name="\033[97mTlprNET\033[0m",
-        details="\033[97mTlprOrganisation's software center.\033[0m",
-        founder=["\033[97mABDULLA SAJAD\033[0m"],
-        location="\033[97mIndia\033[0m",
-        developer=["\033[97msajadtlpr\033[0m"],
-        ascii_art=ascii_art
-    )
+   my_company = CompanyInfo(
+    name="\033[97mTlprNET\033[0m",
+    details="\033[97mTlprOrganisation's software center.\033[0m",
+    founder="\033[97mABDULLA SAJAD\033[0m",  # Use singular form
+    location="\033[97mIndia\033[0m",
+    developer="\033[97msajadtlpr\033[0m",  # Use singular form
+    ascii_art=ascii_art
+)
+
 
     while True:
         my_company.display_info()
